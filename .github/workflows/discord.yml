@@ -10,5 +10,5 @@ jobs:
       - name: Send Discord Notification
         uses: Ilshidur/action-discord@v2
         with:
-          webhook: ${{ secrets.https://discord.com/api/webhooks/1424699049558409377/RD61n3cHpNbQqvZw6K5OB5Y2SvQYdGFWbZMy_UfpT6LHqsir4VdnH_W_zJfj82CrK5JE }}
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
           message: "New commit in repository: ${{ github.repository }} by ${{ github.actor }}\nMessage: ${{ github.event.head_commit.message }}"
