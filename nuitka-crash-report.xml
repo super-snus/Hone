@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf8'?>
+<nuitka-compilation-report nuitka_version="2.7.4" nuitka_commercial_version="not installed" mode="standalone" completion="exception">
+  <exception exception_type="UnicodeDecodeError" exception_value="'utf-8' codec can't decode byte 0xf0 in position 1092: invalid continuation byte">
+Traceback (most recent call last):
+  File "C:\Users\super\AppData\Local\Programs\Python\Python310\lib\site-packages\nuitka\MainControl.py", line 1162, in main
+    _main()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python310\lib\site-packages\nuitka\MainControl.py", line 995, in _main
+    main_module = _createMainModule()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python310\lib\site-packages\nuitka\MainControl.py", line 158, in _createMainModule
+    main_module = buildMainModuleTree(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python310\lib\site-packages\nuitka\tree\Building.py", line 1169, in buildMainModuleTree
+    module = buildModule(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python310\lib\site-packages\nuitka\tree\Building.py", line 1321, in buildModule
+    ) = readSourceCodeFromFilenameWithInformation(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python310\lib\site-packages\nuitka\tree\SourceHandling.py", line 178, in readSourceCodeFromFilenameWithInformation
+    source_code = _readSourceCodeFromFilename3(source_filename)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python310\lib\site-packages\nuitka\tree\SourceHandling.py", line 71, in _readSourceCodeFromFilename3
+    return source_file.read()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python310\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf0 in position 1092: invalid continuation byte
+</exception>
+  <performance>
+    <memory_usage name="after_launch" value="41594880" />
+  </performance>
+  <data_composer blob_size="None" />
+  <command_line>
+    <option value="game.py" />
+    <option value="--standalone" />
+    <option value="--windows-disable-console" />
+    <option value="--follow-imports" />
+    <option value="--output-dir=build" />
+  </command_line>
+  <plugins>
+    <plugin name="anti-bloat" user_enabled="no" />
+    <plugin name="data-files" user_enabled="no" />
+    <plugin name="delvewheel" user_enabled="no" />
+    <plugin name="dll-files" user_enabled="no" />
+    <plugin name="eventlet" user_enabled="no" />
+    <plugin name="gevent" user_enabled="no" />
+    <plugin name="gi" user_enabled="no" />
+    <plugin name="glfw" user_enabled="no" />
+    <plugin name="implicit-imports" user_enabled="no" />
+    <plugin name="kivy" user_enabled="no" />
+    <plugin name="matplotlib" user_enabled="no" />
+    <plugin name="multiprocessing" user_enabled="no" />
+    <plugin name="options-nanny" user_enabled="no" />
+    <plugin name="pbr-compat" user_enabled="no" />
+    <plugin name="pkg-resources" user_enabled="no" />
+    <plugin name="playwright" user_enabled="no" />
+    <plugin name="pywebview" user_enabled="no" />
+    <plugin name="spacy" user_enabled="no" />
+    <plugin name="transformers" user_enabled="no" />
+  </plugins>
+  <distributions />
+  <python python_exe="${sys.prefix}\python.exe" python_flavor="CPython Official" python_version="3.10.0" os_name="Windows" os_release="11" arch_name="x86_64" filesystem_encoding="utf-8">
+    <search_path>
+      <path value="${cwd}" />
+      <path value="${sys.prefix}\DLLs" />
+      <path value="${sys.prefix}\lib" />
+      <path value="${sys.prefix}" />
+      <path value="${sys.prefix}\lib\site-packages" />
+    </search_path>
+  </python>
+  <output run_filename="failed too early" />
+</nuitka-compilation-report>
